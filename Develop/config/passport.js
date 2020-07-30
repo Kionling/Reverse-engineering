@@ -1,6 +1,7 @@
 var passport = require("passport");
+//local strategy is a method of authentication that authenticates and verifies a user's credentials
 var LocalStrategy = require("passport-local").Strategy;
-
+//importing the db models
 var db = require("../models");
 
 // Telling passport we want to use a Local Strategy. In other words, we want login with a username/email and password
@@ -11,6 +12,8 @@ passport.use(new LocalStrategy(
   },
   function(email, password, done) {
     // When a user tries to sign in this code runs
+    //the findOne keyword is used to find a SPECIFIC data table and its counterpart findAll() finds everythign within a specfiied table
+    //Find one is essentially SELECT * FROM....
     db.User.findOne({
       where: {
         email: email
@@ -40,7 +43,7 @@ passport.use(new LocalStrategy(
 passport.serializeUser(function(user, cb) {
   cb(null, user);
 });
-
+//the inverse operation to serialization. Converts string back to json object
 passport.deserializeUser(function(obj, cb) {
   cb(null, obj);
 });
