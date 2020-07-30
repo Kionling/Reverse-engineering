@@ -8,5 +8,5 @@ This file contains a packages.json file that by running "npm  install" in the co
 ## Deployed Link
 [Link to Github Repo](https://github.com/Kionling/Reverse-engineering)
 ## Acknowledgements
-[Deserialize and Serialize](https://stackoverflow.com/questions/3316762/what-is-deserialize-and-serialize-in-json#:~:text=3%20Answers&text=JSON%20is%20a%20format%20that,convert%20string%20%2D%3E%20object)
-[res.send vs res.json](https://stackoverflow.com/questions/19041837/difference-between-res-send-and-res-json-in-express-js)
+*[Deserialize and Serialize](https://stackoverflow.com/questions/3316762/what-is-deserialize-and-serialize-in-json#:~:text=3%20Answers&text=JSON%20is%20a%20format%20that,convert%20string%20%2D%3E%20object)
+*[res.send vs res.json](https://stackoverflow.com/questions/19041837/difference-between-res-send-and-res-json-in-express-js)
